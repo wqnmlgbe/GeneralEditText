@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="GeneralEditText">
+        <attr name="showClearView" format="boolean"></attr>
+        <attr name="switchPasswordVisible" format="boolean"></attr>
+        <attr name="formatText" format="boolean"></attr>
+        <attr name="maxLength" format="integer"></attr>
+    </declare-styleable>
+</resources>

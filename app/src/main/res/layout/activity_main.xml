@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:checked="false"
+            android:id="@+id/cb_clear"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:text="清除按钮" />
+
+        <CheckBox
+            android:checked="true"
+            android:id="@+id/cb_password_visible"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:text="切换密码可见" />
+
+        <CheckBox
+            android:id="@+id/cb_format"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:text="格式化文本" />
+    </LinearLayout>
+
+    <open.cklan.com.widget.GeneralEditText
+        android:id="@+id/edit_text"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        app:switchPasswordVisible="true"
+        android:textColor="#FF4081" />
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/text_view"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:textSize="16sp" />
+</LinearLayout>
+
