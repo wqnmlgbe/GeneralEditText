@@ -2,6 +2,7 @@ package open.cklan.com.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextUtils;
@@ -139,6 +140,14 @@ public class GeneralEditText extends LinearLayout implements View.OnClickListene
     public void setShowClearView(boolean showClearView) {
         this.showClearView = showClearView;
         invalidateClearInputView();
+    }
+
+    public void setClearDrawable(Drawable drawable){
+        clearInput.setImageDrawable(drawable);
+    }
+
+    public void setSwitchPasswordDrawable(Drawable drawable){
+        switchPasswordVisible.setImageDrawable(drawable);
     }
 
     public EditText getEditText(){
